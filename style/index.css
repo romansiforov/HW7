@@ -434,6 +434,14 @@ textarea {
     align-items: center;
 }
 
+.social {
+    align-items: flex-start;
+}
+
+.social div {
+    margin: 0 4rem;
+}
+
 .contact-title {
     font-family: Rosario;
     font-size: 30px;
