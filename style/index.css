@@ -52,7 +52,7 @@ body {
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin: 12rem 0;
 }
 
@@ -62,14 +62,10 @@ body {
 
 .central-photos {
     display: flex;
-    gap: 1rem;
-}
-
-.left-col,
-.right-col {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 55%;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .animateLeft {
@@ -80,7 +76,7 @@ body {
     animation: galleryAnimateRightside 2s linear 1s 1 forwards;
 }
 
-.animation-duration-3 {
+.animation-duration {
     animation-duration: 3s;
 }
 
@@ -118,23 +114,26 @@ body {
     }
 }
 
-.services,
-.row {
+.services {
     display: flex;
-    gap: 3rem;
-    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    justify-content: space-between;
     align-items: center;
     margin: 3rem 0;
 }
 
-.service-types,
-.services__main-img {
-    width: 50%;
+.service-types {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 750px;
+    margin: 0 auto;
 }
 
 .service img {
-    width: 85%;
-    position: relative;
+    width: 80%;
 }
 
 .services__main-img img {
@@ -145,7 +144,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem
+    margin: 0.5rem;
+    gap: 1rem;
 }
 
 .service-name {
@@ -173,6 +173,7 @@ body {
     animation: rotateImage4 5s linear infinite;
 }
 
+
 @keyframes rotateImage1 {
 
     from,
@@ -181,15 +182,15 @@ body {
     }
 
     25% {
-        transform: translate(25em, 0);
+        transform: translate(107%, 0);
     }
 
     50% {
-        transform: translate(25em, 26.2em);
+        transform: translate(107%, 110%);
     }
 
     75% {
-        transform: translate(-0.5em, 26.2em);
+        transform: translate(0, 110%);
     }
 }
 
@@ -201,15 +202,15 @@ body {
     }
 
     25% {
-        transform: translate(0, 26.2em);
+        transform: translate(0, 110%);
     }
 
     50% {
-        transform: translate(-25em, 26.2em);
+        transform: translate(-107%, 110%);
     }
 
     75% {
-        transform: translate(-25em, 0);
+        transform: translate(-107%, 0);
     }
 }
 
@@ -221,15 +222,15 @@ body {
     }
 
     25% {
-        transform: translate(-25em, 0);
+        transform: translate(-106%, 0);
     }
 
     50% {
-        transform: translate(-25em, -26.2em);
+        transform: translate(-106%, -106%);
     }
 
     75% {
-        transform: translate(0, -26.2em);
+        transform: translate(0, -106%);
     }
 }
 
@@ -241,15 +242,15 @@ body {
     }
 
     25% {
-        transform: translate(0, -26.2em);
+        transform: translate(0, -106%);
     }
 
     50% {
-        transform: translate(25em, -26.2em);
+        transform: translate(106%, -106%);
     }
 
     75% {
-        transform: translate(25em, 0);
+        transform: translate(106%, 0);
     }
 }
 
@@ -482,4 +483,153 @@ textarea {
     content: url(../img/twitter.png);
     margin: 0.5rem;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .central-photos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header__navbar {
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 1rem;
+    }
+
+    .header__navbar a {
+        font-size: 20px;
+    }
+
+    .animation-duration {
+        animation-duration: 2s;
+    }
+
+    .service {
+        width: 45%;
+    }
+
+    .service-types {
+        width: 550px;
+        gap: 0;
+    }
+
+    .services__main-img {
+        display: none;
+    }
+
+    .service-name {
+        font-size: 25px;
+    }
+
+    .experts,
+    .left,
+    .right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expert:active .expert-name{
+        height: 154.57px;
+    }
+
+    .footer,
+    .get-in-touch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in-touch-section {
+        width: 90%;
+        order: 2;
+    }
+
+    .google-map {
+        width: 100%;
+        text-align: center;
+    }
+
+    .google-map iframe {
+        width: 500px;
+        height: 500px;
+        order: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .central-photos {
+        width: 100%;
+        order: 1;
+    }
+
+    .central-photos div {
+        width: 45%;
+    }
+
+    .central-photos img {
+        width: 100%;
+    }
+
+    .side-photo {
+        width: 40%;
+        order:2;
+        margin: 0.5rem 0.75rem;
+    }
+
+    .side-photo img {
+        width: 100%;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .service-types {
+        order: 2;
+    }
+
+    .services__main-img {
+        order: 1;
+        width: 100%;
+    }
+
+    .experts {
+        flex-direction: column;
+    }
+
+    .footer,
+    .get-in-touch {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-in-touch-section {
+        width: 90%;
+        order: 2;
+    }
+
+    .google-map {
+        width: 100%;
+        text-align: center;
+    }
+
+    .google-map iframe {
+        width: 500px;
+        height: 500px;
+        order: 1;
+    }
 }
