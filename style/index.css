@@ -84,11 +84,11 @@ body {
 }
 
 .animateLeft {
-    animation: galleryAnimateLeftside 2s linear 1s 1 forwards;
+    animation: galleryAnimateLeftside 2s linear 1 forwards;
 }
 
 .animateRight {
-    animation: galleryAnimateRightside 2s linear 1s 1 forwards;
+    animation: galleryAnimateRightside 2s linear 1 forwards;
 }
 
 .animation-duration {
