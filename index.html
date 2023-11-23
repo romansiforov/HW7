@@ -24,52 +24,44 @@
     </header>
     <main>
         <section class="gallery">
-            <div class="side-photo">
-                <img src="./img/leftPic1.png" alt="left picture" class="animateLeft animation-duration-3">
+            <div class="side-photo wow">
+                <img src="./img/leftPic1.png" alt="left picture" class="animateLeft animation-duration">
             </div>
             <div class="central-photos">
-                <div class="left-col">
-                    <div class="img-1">
-                        <img src="./img/leftPic2.png" alt="left picture 2" class="animateLeft">
-                    </div>
-                    <div class="img-2">
-                        <img src="./img/leftPic3.png" alt="left picture 3" class="animateLeft">
-                    </div>
+                <div class="img-1">
+                    <img src="./img/leftPic2.png" alt="left picture 2" class="animateLeft wow">
                 </div>
-                <div class="right-col">
-                    <div class="img-1">
-                        <img src="./img/rightPic2.png" alt="right picture 2" class="animateRight">
-                    </div>
-                    <div class="img-2">
-                        <img src="./img/rightPic3.png" alt="right picture 3" class="animateRight">
-                    </div>
+                <div class="img-1">
+                    <img src="./img/rightPic2.png" alt="right picture 2" class="animateRight wow">
+                </div>
+                <div class="img-2">
+                    <img src="./img/leftPic3.png" alt="left picture 3" class="animateLeft wow">
+                </div>
+                <div class="img-2">
+                    <img src="./img/rightPic3.png" alt="right picture 3" class="animateRight wow">
                 </div>
             </div>
-            <div class="side-photo">
-                <img src="./img/rightPic1.png" alt="right picture" class="animateRight animation-duration-3">
+            <div class="side-photo wow">
+                <img src="./img/rightPic1.png" alt="right picture" class="animateRight animation-duration">
             </div>
         </section>
         <section class="services">
             <div class="service-types">
-                <div class="row">
-                    <div class="service animateImage1Move">
-                        <img src="./img/HairStyling.png" alt="Hair Styling">
-                        <span class="service-name">Hair Styling</span>
-                    </div>
-                    <div class="service animateImage2Move">
-                        <img src="./img/BeardTrimming.png" alt="Beard Trimming">
-                        <span class="service-name">Beard Trimming</span>
-                    </div>
+                <div class="service animateImage1Move">
+                    <img src="./img/HairStyling.png" alt="Hair Styling">
+                    <span class="service-name">Hair Styling</span>
                 </div>
-                <div class="row">
-                    <div class="service animateImage4Move">
-                        <img src="./img/SmoothShave.png" alt="Smooth Shave">
-                        <span class="service-name">Smooth Shave</span>
-                    </div>
-                    <div class="service animateImage3Move">
-                        <img src="./img/HairStraightening.png" alt="Hair Straightening">
-                        <span class="service-name">Hair Straightening</span>
-                    </div>
+                <div class="service animateImage2Move">
+                    <img src="./img/BeardTrimming.png" alt="Beard Trimming">
+                    <span class="service-name">Beard Trimming</span>
+                </div>
+                <div class="service animateImage4Move">
+                    <img src="./img/SmoothShave.png" alt="Smooth Shave">
+                    <span class="service-name">Smooth Shave</span>
+                </div>
+                <div class="service animateImage3Move">
+                    <img src="./img/HairStraightening.png" alt="Hair Straightening">
+                    <span class="service-name">Hair Straightening</span>
                 </div>
             </div>
             <div class="services__main-img">
@@ -122,11 +114,12 @@
 
         </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="contacts">
             <div class="contact-title">Email:<span class="contact-value">kumarpratiyush1405@gmail.com</span></div>
             <div class="contact-title">Phone:<span class="contact-value">+(972) 723429834</span></div>
-            <div class="contact-title">Headquarters:<span class="contact-value">836th Avenue, 3rd Floor, New York</span></div>
+            <div class="contact-title">Headquarters:<span class="contact-value">836th Avenue, 3rd Floor, New York</span>
+            </div>
         </div>
         <div class="open-hours">
             <p>Opening Hours</p>
@@ -139,7 +132,9 @@
             <div class="contact-value facebook">Facebook</div>
             <div class="contact-value twitter">Twitter</div>
         </div>
-     </footer>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 
 </html>
